@@ -1,0 +1,58 @@
+// *****************************************************************************
+// FIELD DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-field {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+
+
+// HELP TEXT
+// -----------------------------------------------------------------------------
+
+.bubl-field .bubl-help {
+    position: relative;
+    display: block;
+    padding: $bubl-field-help-padding;
+    font-size: $bubl-field-help-font-size;
+    line-height: $bubl-field-help-line-height;
+    font-weight: $bubl-field-help-font-weight;
+    color: $bubl-field-help-color;
+}
+.bubl-field .bubl-error + .bubl-help {
+    padding-top: (2 * $bubl-field-help-padding-top);
+}
+
+
+
+// ERROR MESSAGE
+// -----------------------------------------------------------------------------
+
+.bubl-error {
+    position: relative;
+    display: block;
+    font-size: $bubl-field-error-font-size;
+    line-height: $bubl-field-error-line-height;
+    font-weight: $bubl-field-error-font-weight;
+    color: $bubl-field-error-color;
+}
+
+.bubl-field.bubl-field_error .bubl-error {
+    position: relative;
+    display: block;
+    padding: $bubl-field-error-padding;
+    font-size: $bubl-field-error-font-size;
+    line-height: $bubl-field-error-line-height;
+    font-weight: $bubl-field-error-font-weight;
+    color: $bubl-field-error-color;
+}

@@ -1,0 +1,80 @@
+// *****************************************************************************
+// CHECKBOX SWITCH VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// PADDING
+// -----------------------------------------------------------------------------
+
+$bubl-switch-padding-top: .5rem;
+$bubl-switch-padding-right: .5rem;
+$bubl-switch-padding-bottom: .5rem;
+$bubl-switch-padding-left: .5rem;
+$bubl-switch-padding:
+    $bubl-switch-padding-top
+    $bubl-switch-padding-right
+    $bubl-switch-padding-bottom
+    $bubl-switch-padding-left;
+
+
+
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+$bubl-switch-font-family: $bubl-font-family;
+$bubl-switch-font-weight: $bubl-font-weight-medium;
+$bubl-switch-font-size: $bubl-font-size-s;
+$bubl-switch-line-height: $bubl-line-height-s;
+
+$bubl-switch-color: $bubl-text-color;
+
+
+
+// BORDER
+// -----------------------------------------------------------------------------
+
+$bubl-switch-border-width: 2px;
+$bubl-switch-border-style: solid;
+$bubl-switch-border-color: $bubl-color-2-600;
+$bubl-switch-border:
+    $bubl-switch-border-width
+    $bubl-switch-border-style
+    $bubl-switch-border-color;
+
+$bubl-switch-border-radius: 4px;
+$bubl-switch-border-radius-inner: 3px;
+
+
+
+// BACKGROUND
+// -----------------------------------------------------------------------------
+
+$bubl-switch-background: #fff;
+
+
+
+
+// LABEL
+// -----------------------------------------------------------------------------
+
+$bubl-switch-label-true-color: $bubl-text-color-silent;
+$bubl-switch-label-true-background: transparent;
+
+$bubl-switch-label-false-color: $bubl-text-color-silent;
+$bubl-switch-label-false-background: transparent;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-switch-label-true-color--selected: #fff;
+$bubl-switch-label-true-background--selected: $bubl-link-color;
+
+$bubl-switch-label-false-color--selected: $bubl-text-color;
+$bubl-switch-label-false-background--selected: $bubl-color-1-50;
+
+$bubl-switch-label-border-color--error: $bubl-error-color;

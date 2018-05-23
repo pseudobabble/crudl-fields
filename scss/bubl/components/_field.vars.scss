@@ -1,0 +1,54 @@
+// *****************************************************************************
+// LABEL VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+
+
+// HELP TEXT
+// -----------------------------------------------------------------------------
+
+$bubl-field-help-font-family: $bubl-font-family;
+$bubl-field-help-font-weight: $bubl-font-weight-regular;
+$bubl-field-help-font-size: $bubl-font-size-s;
+$bubl-field-help-line-height: $bubl-line-height-s;
+
+$bubl-field-help-padding-top: .25rem;
+$bubl-field-help-padding-right: 0;
+$bubl-field-help-padding-bottom: 0;
+$bubl-field-help-padding-left: 0;
+$bubl-field-help-padding:
+    $bubl-field-help-padding-top
+    $bubl-field-help-padding-right
+    $bubl-field-help-padding-bottom
+    $bubl-field-help-padding-left;
+
+$bubl-field-help-color: $bubl-text-color-silent;
+
+
+
+// ERROR MESSAGE
+// -----------------------------------------------------------------------------
+
+$bubl-field-error-font-family: $bubl-font-family;
+$bubl-field-error-font-weight: $bubl-font-weight-regular;
+$bubl-field-error-font-size: $bubl-font-size-s;
+$bubl-field-error-line-height: $bubl-line-height-s;
+
+$bubl-field-error-padding-top: .25rem;
+$bubl-field-error-padding-right: 0;
+$bubl-field-error-padding-bottom: 0;
+$bubl-field-error-padding-left: 0;
+$bubl-field-error-padding:
+    $bubl-field-error-padding-top
+    $bubl-field-error-padding-right
+    $bubl-field-error-padding-bottom
+    $bubl-field-error-padding-left;
+
+$bubl-field-error-color: $bubl-error-color;

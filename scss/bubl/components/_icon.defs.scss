@@ -1,0 +1,44 @@
+// *****************************************************************************
+// ICON DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// ICON BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-icon {
+    font-family: $bubl-icon-font-family;
+    font-size: 125%;
+    line-height: inherit;
+}
+
+
+
+// ICON CLASSNAMES
+// -----------------------------------------------------------------------------
+
+.bubl-icon_arrow-down:before {
+    content: "keyboard_arrow_down";
+}
+.bubl-icon_clear:before {
+    content: "clear";
+}
+.bubl-icon_close:before {
+    content: "close";
+}
+.bubl-icon_face:before {
+    content: "face";
+}
+.bubl-icon_search:before {
+    content: "search";
+}
+.bubl-icon_today:before {
+    content: "today";
+}
+
+.bubl-icon_now:before {
+    content: "access_time";
+}

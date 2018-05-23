@@ -1,0 +1,35 @@
+// *****************************************************************************
+// BUTTON DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+button.bubl-button,
+[role="button"].bubl-button {
+    transition: all $bubl-transition-speed $bubl-transition-cubic-bezier;
+    position: relative;
+    display: inline-block;
+    padding: $bubl-button-padding;
+    font-family: $bubl-button-font-family;
+    font-size: $bubl-button-font-size;
+    line-height: $bubl-button-line-height;
+    font-weight: $bubl-button-font-weight;
+    color: $bubl-button-color;
+    border: $bubl-button-border;
+    border-radius: $bubl-button-border-radius;
+    background: $bubl-button-background;
+    cursor: pointer;
+    &:hover {
+        color: $bubl-button-color--hover;
+        border-color: $bubl-button-border-color--hover;
+        background: $bubl-button-background--hover;
+    }
+    &[disabled] {
+        background: $bubl-button-background--disabled;
+    }
+}

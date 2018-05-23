@@ -1,0 +1,33 @@
+// *****************************************************************************
+// LABEL VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-label-font-family: $bubl-font-family;
+$bubl-label-font-weight: $bubl-font-weight-medium;
+$bubl-label-font-size: $bubl-font-size-xs;
+$bubl-label-line-height: $bubl-line-height-xs;
+
+$bubl-label-padding-top: 0;
+$bubl-label-padding-right: 0;
+$bubl-label-padding-bottom: .25rem;
+$bubl-label-padding-left: 0;
+$bubl-label-padding:
+    $bubl-label-padding-top
+    $bubl-label-padding-right
+    $bubl-label-padding-bottom
+    $bubl-label-padding-left;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-label-color: $bubl-text-color;
+$bubl-label-color--error: $bubl-error-color;

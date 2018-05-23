@@ -1,0 +1,93 @@
+// *****************************************************************************
+// CHECKBOX SWITCH DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-switch.bubl-input {
+    width: auto;
+}
+
+
+
+// ICON
+// -----------------------------------------------------------------------------
+
+.bubl-switch.bubl-checkbox {
+    &:before {
+        display: none;
+    }
+}
+
+.bubl-switch.bubl-checkbox_checked {
+    &:before {
+        display: none;
+    }
+}
+
+
+// LABEL
+// -----------------------------------------------------------------------------
+
+.bubl-switch__label {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    color: $bubl-switch-color;
+    font-family: $bubl-switch-font-family;
+    font-weight: $bubl-switch-font-weight;
+    font-size: $bubl-switch-font-size;
+    line-height: $bubl-switch-line-height;
+    border: $bubl-switch-border;
+    border-radius: $bubl-switch-border-radius;
+    background: $bubl-switch-background;
+}
+
+.bubl-switch__label-true,
+.bubl-switch__label-false {
+    position: relative;
+    display: inline-block;
+    padding: $bubl-switch-padding;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bubl-switch__label-true {
+    pointer-events: auto;
+    border-top-right-radius: $bubl-switch-border-radius-inner;
+    border-bottom-right-radius: $bubl-switch-border-radius-inner;
+    color: $bubl-switch-label-true-color;
+    background: $bubl-switch-label-true-background;
+}
+.bubl-switch__label-false {
+    pointer-events: none;
+    border-top-left-radius: $bubl-switch-border-radius-inner;
+    border-bottom-left-radius: $bubl-switch-border-radius-inner;
+    color: $bubl-switch-label-false-color--selected;
+    background: $bubl-switch-label-false-background--selected;
+}
+
+.bubl-checkbox_checked {
+    .bubl-switch__label-false {
+        pointer-events: auto;
+        color: $bubl-switch-label-false-color;
+        background: $bubl-switch-label-false-background;
+    }
+    .bubl-switch__label-true {
+        pointer-events: none;
+        color: $bubl-switch-label-true-color--selected;
+        background: $bubl-switch-label-true-background--selected;
+    }
+}
+
+.bubl-error .bubl-checkbox,
+.bubl-error.bubl-checkbox {
+    label {
+        color: $bubl-checkbox-label-color--error;
+    }
+}

@@ -1,0 +1,96 @@
+// *****************************************************************************
+// INPUT VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// PADDING
+// -----------------------------------------------------------------------------
+
+$bubl-input-padding-top: .5rem;
+$bubl-input-padding-right: .5rem;
+$bubl-input-padding-bottom: .5rem;
+$bubl-input-padding-left: .5rem;
+$bubl-input-padding:
+    $bubl-input-padding-top
+    $bubl-input-padding-right
+    $bubl-input-padding-bottom
+    $bubl-input-padding-left;
+
+
+
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+$bubl-input-font-family: $bubl-font-family;
+$bubl-input-font-weight: $bubl-font-weight-medium;
+$bubl-input-font-size: $bubl-font-size-r;
+$bubl-input-line-height: $bubl-line-height-r;
+
+$bubl-input-color: $bubl-text-color;
+$bubl-input-placeholder-color: darken($bubl-color-2-600, 5);
+
+
+
+// BORDER
+// -----------------------------------------------------------------------------
+
+$bubl-input-border-width: 2px;
+$bubl-input-border-style: solid;
+$bubl-input-border-color: $bubl-color-2-600;
+$bubl-input-border:
+    $bubl-input-border-width
+    $bubl-input-border-style
+    $bubl-input-border-color;
+
+$bubl-input-border-radius: 4px;
+$bubl-input-border-radius-inner: 3px;
+
+
+
+// BACKGROUND
+// -----------------------------------------------------------------------------
+
+$bubl-input-background: #fff;
+
+
+
+// BUTTON
+// -----------------------------------------------------------------------------
+
+$bubl-input-button-border-color: $bubl-input-border-color;
+$bubl-input-button-border-color--hover: $bubl-input-border-color;
+
+
+
+// LABEL
+// -----------------------------------------------------------------------------
+
+$bubl-input-label-font-family: $bubl-font-family;
+$bubl-input-label-font-weight: $bubl-font-weight-medium;
+$bubl-input-label-font-size: $bubl-font-size-r;
+$bubl-input-label-line-height: $bubl-line-height-r;
+$bubl-input-label-color: $bubl-text-color-quiet;
+$bubl-input-label-background: lighten($bubl-input-border-color, 10);
+
+
+
+// ICON
+// -----------------------------------------------------------------------------
+
+$bubl-input-icon-width: 2.5rem;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-input-color--focus: $bubl-text-color;
+$bubl-input-border-color--focus: $bubl-link-color;
+$bubl-input-background--focus: $bubl-input-background;
+
+$bubl-input-color--error: $bubl-text-color;
+$bubl-input-border-color--error: $bubl-error-color;
+$bubl-input-background--error: $bubl-input-background;

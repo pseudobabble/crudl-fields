@@ -1,0 +1,61 @@
+// *****************************************************************************
+// CHECKBOX VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// ICON
+// -----------------------------------------------------------------------------
+
+$bubl-checkbox-icon-font-family: $bubl-icon-font-family;
+$bubl-checkbox-icon-font-size: $bubl-font-size-r;
+$bubl-checkbox-icon-line-height: $bubl-line-height-s;
+$bubl-checkbox-icon-color: $bubl-text-color;
+$bubl-checkbox-icon-size: 1rem;
+$bubl-checkbox-icon-offset: -.125rem;
+
+$bubl-checkbox-icon-border-width: 2px;
+$bubl-checkbox-icon-border-style: solid;
+$bubl-checkbox-icon-border-color: $bubl-color-2-600;
+$bubl-checkbox-icon-border:
+    $bubl-checkbox-icon-border-width
+    $bubl-checkbox-icon-border-style
+    $bubl-checkbox-icon-border-color;
+
+$bubl-checkbox-icon-border-radius: 4px;
+$bubl-checkbox-icon-background: #fff;
+
+$bubl-checkbox-icon-color--checked: $bubl-color-2-50;
+$bubl-checkbox-icon-border-color--checked: $bubl-text-color;
+$bubl-checkbox-icon-background--checked: $bubl-text-color;
+
+$bubl-checkbox-icon-border-color--error: $bubl-error-color;
+
+
+// LABEL
+// -----------------------------------------------------------------------------
+
+$bubl-checkbox-label-font-family: $bubl-font-family;
+$bubl-checkbox-label-font-weight: $bubl-font-weight-medium;
+$bubl-checkbox-label-font-size: $bubl-font-size-r;
+$bubl-checkbox-label-line-height: $bubl-line-height-r;
+
+$bubl-checkbox-label-padding-top: 0;
+$bubl-checkbox-label-padding-right: 0;
+$bubl-checkbox-label-padding-bottom: 0;
+$bubl-checkbox-label-padding-left: 1rem;
+$bubl-checkbox-label-padding:
+    $bubl-checkbox-label-padding-top
+    $bubl-checkbox-label-padding-right
+    $bubl-checkbox-label-padding-bottom
+    $bubl-checkbox-label-padding-left;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-checkbox-label-color: $bubl-text-color;
+$bubl-checkbox-label-color--error: $bubl-error-color;

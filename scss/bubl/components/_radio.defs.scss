@@ -1,0 +1,99 @@
+// *****************************************************************************
+// RADIO DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-radio {
+
+}
+.bubl-radio > * {
+    border: 0;
+}
+
+
+
+// ICON
+// -----------------------------------------------------------------------------
+
+.bubl-radio .bubl-hidden {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: -100000px;
+}
+.bubl-radio {
+    &:before {
+        content: " ";
+        position: relative;
+        display: inline-block;
+        width: $bubl-radio-icon-size;
+        height: $bubl-radio-icon-size;
+        font-family: $bubl-radio-icon-font-family;
+        font-size: $bubl-radio-icon-font-size;
+        line-height: $bubl-radio-icon-line-height;
+        color: $bubl-radio-icon-color;
+        border: $bubl-radio-icon-border;
+        border-radius: $bubl-radio-icon-border-radius;
+        background: $bubl-radio-icon-background;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.bubl-radio_checked {
+    &:before {
+        content: " ";
+        color: $bubl-radio-icon-color--checked;
+        border-color: $bubl-radio-icon-border-color--checked;
+        background: $bubl-radio-icon-background--checked;
+        text-align: center;
+    }
+    &:after {
+        content: " ";
+        position: absolute;
+        top: (2* $bubl-radio-icon-border-width);
+        left: (2* $bubl-radio-icon-border-width);
+        display: inline-block;
+        width: $bubl-radio-icon-size--checked;
+        height: $bubl-radio-icon-size--checked;
+        border-radius: $bubl-radio-icon-border-radius;
+        background: $bubl-radio-icon-color--checked;
+    }
+}
+
+
+// LABEL
+// -----------------------------------------------------------------------------
+
+.bubl-radio label {
+    position: relative;
+    display: inline-block;
+    padding: $bubl-radio-label-padding;
+    font-size: $bubl-radio-label-font-size;
+    line-height: $bubl-radio-label-line-height;
+    font-weight: $bubl-radio-label-font-weight;
+    color: $bubl-radio-label-color;
+    cursor: pointer;
+}
+
+.bubl-radio label.bubl-label_required:after {
+    content: "*";
+    position: relative;
+    display: inline-block;
+    top: .0625rem;
+    margin-left: .25rem;
+    font-size: 120%;
+}
+
+.bubl-error .bubl-radio,
+.bubl-error.bubl-radio {
+    label {
+        color: $bubl-radio-label-color--error;
+    }
+}

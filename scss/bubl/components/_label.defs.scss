@@ -1,0 +1,37 @@
+// *****************************************************************************
+// LABEL DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+label.bubl-label {
+    position: relative;
+    display: inline-block;
+    padding: $bubl-label-padding;
+    font-size: $bubl-label-font-size;
+    line-height: $bubl-label-line-height;
+    font-weight: $bubl-label-font-weight;
+    color: $bubl-label-color;
+    cursor: pointer;
+}
+
+.bubl-label.bubl-label_required:after {
+    content: "*";
+    position: relative;
+    display: inline-block;
+    top: .0625rem;
+    margin-left: .25rem;
+    font-size: 120%;
+}
+
+.bubl-error {
+    label.bubl-label,
+    .bubl-label {
+        color: $bubl-label-color--error;
+    }
+}

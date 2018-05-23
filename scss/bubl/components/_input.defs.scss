@@ -1,0 +1,355 @@
+// *****************************************************************************
+// INPUT DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+/* Use flexbox for .input to provide the possibility to place other
+elements (e.g. buttons, labels, icons etc.) left/right of input */
+// -----------------------------------------------------------------------------
+
+.bubl-input {
+    position: relative;
+    z-index: 110;
+    display: flex;
+    width: 100%;
+}
+
+
+
+// BASIC FORM FIELD STYLES
+// -----------------------------------------------------------------------------
+
+%bubl-field-style {
+    transition: all $bubl-transition-speed $bubl-transition-cubic-bezier;
+    position: relative;
+    z-index: 120;
+    max-width: 100%;
+    width: 100%;
+    padding: $bubl-input-padding;
+    color: $bubl-input-color;
+    border: $bubl-input-border;
+    background: $bubl-input-background;
+    box-shadow: 0;
+    outline: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include bubl-placeholder() {
+        color: $bubl-input-placeholder-color;
+    }
+    &:focus {
+        z-index: 130;
+        color: $bubl-input-color--focus;
+        border-color: $bubl-input-border-color--focus;
+        background: $bubl-input-background--focus;
+    }
+    .bubl-input_error,
+    .bubl-field_error & {
+        color: $bubl-input-color--error;
+        border-color: $bubl-input-border-color--error;
+        background: $bubl-input-background--error;
+    }
+}
+
+.bubl-input > {
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea,
+    .dz-clickable {
+        @extend %bubl-field-style;
+    }
+    textarea {
+        white-space: pre-wrap;
+    }
+}
+.bubl-input {
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        font-family: $bubl-input-font-family;
+        font-weight: $bubl-input-font-weight;
+        font-size: $bubl-input-font-size;
+        line-height: $bubl-input-line-height;
+    }
+}
+
+
+
+// DEFINE STYLES & BORDERS FOR FLEX ELEMENTS
+// -----------------------------------------------------------------------------
+
+.bubl-input > {
+    :first-child {
+        border-top-left-radius: $bubl-input-border-radius;
+        border-bottom-left-radius: $bubl-input-border-radius;
+    }
+    :last-child {
+        border-top-right-radius: $bubl-input-border-radius;
+        border-bottom-right-radius: $bubl-input-border-radius;
+    }
+    :not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    :not(:last-child) {
+        margin-right: -($bubl-input-border-width);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.bubl-input > * {
+    margin: 0;
+    padding: $bubl-input-padding;
+    font-family: $bubl-input-font-family;
+    font-weight: $bubl-input-font-weight;
+    // font-size: $bubl-input-font-size; // don't use because icons should have their own font size
+    line-height: $bubl-input-line-height;
+    white-space: nowrap;
+    border: $bubl-input-border;
+    outline: 0;
+}
+
+
+
+// FIELDGROUPS
+// -----------------------------------------------------------------------------
+
+.bubl-input > .bubl-input__field-group {
+    position: relative;
+    display: flex;
+    margin-right: .75rem;
+    padding: 0;
+    border-radius: $bubl-input-border-radius;
+    &:only-of-type {
+        width: 100%;
+    }
+    & > {
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea,
+        .dz-clickable {
+            @extend %bubl-field-style;
+            text-align: center;
+            border: 0 !important;
+            &:focus {
+                background: transparentize($bubl-input-border-color--focus, .9);
+            }
+        }
+    }
+}
+
+.bubl-input > .bubl-input__field-group > {
+    position: relative;
+    z-index: 110;
+    :first-child {
+        border-top-left-radius: $bubl-input-border-radius;
+        border-bottom-left-radius: $bubl-input-border-radius;
+    }
+    :last-child {
+        border-top-right-radius: $bubl-input-border-radius;
+        border-bottom-right-radius: $bubl-input-border-radius;
+    }
+    :not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    :not(:last-child) {
+        margin-right: -($bubl-input-border-width);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        z-index: 120;
+        &:focus {
+            z-index: 140;
+        }
+    }
+}
+.bubl-input > .bubl-input__field-group > .bubl-input__field-group-separator {
+    display: inline-block;
+    padding: $bubl-input-padding-top .5rem 0;
+    text-align: center;
+    color: $bubl-text-color-silent;
+    font-weight: $bubl-input-font-weight;
+    font-size: $bubl-input-font-size;
+}
+
+
+
+// DATETIME
+// -----------------------------------------------------------------------------
+
+.bubl-input.bubl-datetime_fragments > {
+    button {
+        margin-right: 0;
+        min-width: 2.5rem;
+        border-radius: $bubl-input-border-radius;
+        & + button {
+            display: none;
+            margin-left: 2px;
+        }
+    }
+    button.bubl-button_clear {
+        border-color: $bubl-button-background--disabled;
+        background: $bubl-button-background--disabled;
+        &:hover {
+            color: $bubl-button-color--hover;
+            border-color: $bubl-button-border-color--hover;
+            background: $bubl-button-background--hover;
+        }
+    }
+}
+
+.bubl-input.bubl-datetime_fragments {
+    .bubl-datetime__date {
+        width: 60%;
+    }
+    .bubl-datetime__time {
+        width: 40%;
+    }
+    &.bubl-datetime_date-only {
+        .bubl-datetime__date {
+            width: calc(60% - 2rem - 6px)
+        }
+    }
+    &.bubl-datetime_time-only {
+        .bubl-datetime__time {
+            width: calc(40% - 2rem - 6px)
+        }
+    }
+}
+
+
+
+// ICONS & INPUTS
+// -----------------------------------------------------------------------------
+
+.bubl-input > .bubl-icon {
+    display: inline-block;
+    z-index: 130;
+    width: 2.5rem;
+    text-align: center;
+    color: $bubl-text-color-quiet;
+    border-color: transparent;
+}
+
+// Icon before input
+.bubl-input.bubl-input_icon-left > {
+    input[type="text"],
+    input[type="password"] {
+        margin-left: calc(-#{$bubl-input-icon-width} + #{$bubl-input-border-width});
+        padding-left: calc(#{$bubl-input-icon-width} - (2 * #{$bubl-input-border-width}));
+        &:nth-child(2) {
+            border-top-left-radius: $bubl-input-border-radius;
+            border-bottom-left-radius: $bubl-input-border-radius;
+        }
+    }
+}
+// Icon after input
+.bubl-input.bubl-input_icon-right > {
+    input[type="text"],
+    input[type="password"] {
+        padding-right: calc(#{$bubl-input-icon-width} - (2 * #{$bubl-input-border-width}));
+        &:nth-last-child(2) {
+            border-top-right-radius: $bubl-input-border-radius;
+            border-bottom-right-radius: $bubl-input-border-radius;
+        }
+        & + .bubl-icon {
+            z-index: 130;
+            margin-left: calc(-#{$bubl-input-icon-width} + #{$bubl-input-border-width});
+        }
+    }
+}
+
+
+
+// LABELS
+// -----------------------------------------------------------------------------
+
+.bubl-input {
+    label.bubl-label,
+    .bubl-label {
+        padding: $bubl-input-padding;
+        font-size: $bubl-input-label-font-size;
+        line-height: $bubl-input-label-line-height;
+        font-weight: $bubl-input-label-font-weight;
+        color: $bubl-input-label-color;
+        background: $bubl-input-label-background;
+    }
+}
+
+
+
+// BUTTONS
+// -----------------------------------------------------------------------------
+
+.bubl-input > {
+    button.bubl-button,
+    [role="button"].bubl-button {
+        border-color: $bubl-input-button-border-color;
+        &:hover {
+            border-color: $bubl-input-button-border-color--hover;
+        }
+    }
+}
+
+.bubl-input > {
+    button.bubl-button,
+    [role="button"].bubl-button {
+        .bubl-icon {
+            float: left;
+        }
+    }
+}
+
+
+
+// INPUT-ARRAY
+// -----------------------------------------------------------------------------
+
+.bubl-input.bubl-input-array {
+    flex-direction: column;
+}
+.bubl-input.bubl-input-array > {
+    :first-child {
+        border-radius: 0;
+        border-top-left-radius: $bubl-input-border-radius;
+        border-top-right-radius: $bubl-input-border-radius;
+    }
+    :last-child {
+        border-radius: 0;
+        border-bottom-left-radius: $bubl-input-border-radius;
+        border-bottom-right-radius: $bubl-input-border-radius;
+    }
+    :only-child {
+        border-radius: $bubl-input-border-radius;
+    }
+    :not(:first-child) {
+        margin-top: -($bubl-input-border-width);
+    }
+    :not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+
+
+// FILE UPLOAD
+// -----------------------------------------------------------------------------
+
+.bubl-input.bubl-file-upload {
+    > .dz-clickable {
+        min-height: 2.5rem;
+    }
+}

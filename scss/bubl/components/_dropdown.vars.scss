@@ -1,0 +1,280 @@
+// *****************************************************************************
+// DROPDOWN VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-font-family: $bubl-font-family;
+$bubl-dropdown-font-weight: $bubl-font-weight-medium;
+$bubl-dropdown-font-size: $bubl-font-size-r;
+$bubl-dropdown-line-height: $bubl-line-height-r;
+$bubl-dropdown-color: $bubl-text-color;
+
+$bubl-dropdown-padding-top: 0;
+$bubl-dropdown-padding-right: 0;
+$bubl-dropdown-padding-bottom: 0;
+$bubl-dropdown-padding-left: 0;
+$bubl-dropdown-padding:
+    $bubl-dropdown-padding-top
+    $bubl-dropdown-padding-right
+    $bubl-dropdown-padding-bottom
+    $bubl-dropdown-padding-left;
+
+
+
+// BORDER
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-border-width: 2px;
+$bubl-dropdown-border-style: solid;
+$bubl-dropdown-border-color: $bubl-color-2-600;
+$bubl-dropdown-border:
+    $bubl-dropdown-border-width
+    $bubl-dropdown-border-style
+    $bubl-dropdown-border-color;
+
+$bubl-dropdown-border-color--focus: $bubl-link-color;
+
+$bubl-dropdown-border-radius: 4px;
+$bubl-dropdown-border-radius-inner: 3px;
+
+
+
+// BACKGROUND & BOX-SHADOW
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-background: $bubl-color-2-50;
+$bubl-dropdown-box-shadow: 0 1rem 2rem transparentize($bubl-text-color, .75);
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-border-color--error: $bubl-error-color;
+
+
+
+// DROPDOWN__OPTION BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-option-font-family: $bubl-font-family;
+$bubl-dropdown-option-font-weight: $bubl-font-weight-medium;
+$bubl-dropdown-option-font-size: $bubl-font-size-r;
+$bubl-dropdown-option-line-height: $bubl-line-height-r;
+$bubl-dropdown-option-color: $bubl-text-color;
+
+$bubl-dropdown-option-margin-top: 0;
+$bubl-dropdown-option-margin-right: 0;
+$bubl-dropdown-option-margin-bottom: 0;
+$bubl-dropdown-option-margin-left: 0;
+$bubl-dropdown-option-margin:
+    $bubl-dropdown-option-margin-top
+    $bubl-dropdown-option-margin-right
+    $bubl-dropdown-option-margin-bottom
+    $bubl-dropdown-option-margin-left;
+
+$bubl-dropdown-option-padding-top: .5rem;
+$bubl-dropdown-option-padding-right: .75rem;
+$bubl-dropdown-option-padding-bottom: .5rem;
+$bubl-dropdown-option-padding-left: .75rem;
+$bubl-dropdown-option-padding:
+    $bubl-dropdown-option-padding-top
+    $bubl-dropdown-option-padding-right
+    $bubl-dropdown-option-padding-bottom
+    $bubl-dropdown-option-padding-left;
+
+$bubl-dropdown-option-border-width: 1px;
+$bubl-dropdown-option-border-style: solid;
+$bubl-dropdown-option-border-color: $bubl-color-2-600;
+$bubl-dropdown-option-border:
+    $bubl-dropdown-option-border-width
+    $bubl-dropdown-option-border-style
+    $bubl-dropdown-option-border-color;
+
+$bubl-dropdown-option-border-radius: 0;
+$bubl-dropdown-option-border-radius-inner: 0;
+
+$bubl-dropdown-option-background: $bubl-color-1-10;
+
+$bubl-dropdown-option-background--hover: $bubl-color-3-100;
+$bubl-dropdown-option-background--selected: $bubl-color-2-400;
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-header-font-family: $bubl-font-family;
+$bubl-dropdown-header-font-weight: $bubl-font-weight-medium;
+$bubl-dropdown-header-font-size: $bubl-font-size-r;
+$bubl-dropdown-header-line-height: $bubl-line-height-r;
+$bubl-dropdown-header-color: $bubl-text-color-silent;
+
+$bubl-dropdown-header-padding-top: .5rem;
+$bubl-dropdown-header-padding-right: .5rem;
+$bubl-dropdown-header-padding-bottom: .5rem;
+$bubl-dropdown-header-padding-left: .5rem;
+$bubl-dropdown-header-padding:
+    $bubl-dropdown-header-padding-top
+    $bubl-dropdown-header-padding-right
+    $bubl-dropdown-header-padding-bottom
+    $bubl-dropdown-header-padding-left;
+
+
+
+// BORDER
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-header-border-width: 2px;
+$bubl-dropdown-header-border-style: solid;
+$bubl-dropdown-header-border-color: $bubl-color-2-600;
+$bubl-dropdown-header-border:
+    $bubl-dropdown-header-border-width
+    $bubl-dropdown-header-border-style
+    $bubl-dropdown-header-border-color;
+
+$bubl-dropdown-header-border-radius: 4px;
+$bubl-dropdown-header-border-radius-inner: 3px;
+
+
+
+// BACKGROUND & BOX-SHADOW
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-header-background: $bubl-color-2-50;
+
+
+
+// CLEAR
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-header-clear-padding-top: .5rem;
+$bubl-dropdown-header-clear-padding-right: .5rem;
+$bubl-dropdown-header-clear-padding-bottom: .5rem;
+$bubl-dropdown-header-clear-padding-left: .5rem;
+$bubl-dropdown-header-clear-padding:
+    $bubl-dropdown-header-clear-padding-top
+    $bubl-dropdown-header-clear-padding-right
+    $bubl-dropdown-header-clear-padding-bottom
+    $bubl-dropdown-header-clear-padding-left;
+$bubl-dropdown-header-clear-color: $bubl-color-1-100;
+$bubl-dropdown-header-clear-background: transparent;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-header-color--hover: $bubl-text-color;
+$bubl-dropdown-header-border-color--hover: $bubl-color-2-600;
+$bubl-dropdown-header-background--hover: $bubl-color-3-100;
+
+$bubl-dropdown-header-color--expanded: $bubl-text-color;
+$bubl-dropdown-header-border-color--expanded: $bubl-color-3-500;
+$bubl-dropdown-header-background--expanded: $bubl-color-3-100;
+
+$bubl-dropdown-header-color--has-selected: $bubl-text-color;
+
+$bubl-dropdown-header-clear-color--hover: $bubl-color-4-500;
+$bubl-dropdown-header-clear-background--hover: transparent;
+
+
+
+// SELECTED ITEMS "BLOCK"
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-selected-option-block-font-family: $bubl-font-family;
+$bubl-dropdown-selected-option-block-font-weight: $bubl-font-weight-regular;
+$bubl-dropdown-selected-option-block-font-size: $bubl-font-size-r;
+$bubl-dropdown-selected-option-block-line-height: $bubl-line-height-r;
+$bubl-dropdown-selected-option-block-color: $bubl-text-color;
+
+$bubl-dropdown-selected-option-block-border-radius: 0;
+
+$bubl-dropdown-selected-option-block-border-width: 2px;
+$bubl-dropdown-selected-option-block-border-style: solid;
+$bubl-dropdown-selected-option-block-border-color: $bubl-color-2-500;
+$bubl-dropdown-selected-option-block-border:
+    $bubl-dropdown-selected-option-block-border-width
+    $bubl-dropdown-selected-option-block-border-style
+    $bubl-dropdown-selected-option-block-border-color;
+
+    $bubl-dropdown-selected-option-block-padding-top: .5rem;
+    $bubl-dropdown-selected-option-block-padding-right: .5rem;
+    $bubl-dropdown-selected-option-block-padding-bottom: .5rem;
+    $bubl-dropdown-selected-option-block-padding-left: .5rem;
+    $bubl-dropdown-selected-option-block-padding:
+        $bubl-dropdown-selected-option-block-padding-top
+        $bubl-dropdown-selected-option-block-padding-right
+        $bubl-dropdown-selected-option-block-padding-bottom
+        $bubl-dropdown-selected-option-block-padding-left;
+
+$bubl-dropdown-selected-option-block-background: transparent;
+
+$bubl-dropdown-selected-option-block-button-color: $bubl-link-color;
+$bubl-dropdown-selected-option-block-button-border-width: 2px;
+$bubl-dropdown-selected-option-block-button-border-style: solid;
+$bubl-dropdown-selected-option-block-button-border-color: transparent;
+$bubl-dropdown-selected-option-block-button-border:
+    $bubl-dropdown-selected-option-block-button-border-width
+    $bubl-dropdown-selected-option-block-button-border-style
+    $bubl-dropdown-selected-option-block-button-border-color;
+$bubl-dropdown-selected-option-block-button-border-radius: 4px;
+$bubl-dropdown-selected-option-block-button-background: transparent;
+
+$bubl-dropdown-selected-option-block-button-color--hover: $bubl-text-color;
+$bubl-dropdown-selected-option-block-button-border-color--hover: transparent;
+$bubl-dropdown-selected-option-block-button-background--hover: transparent;
+
+
+
+// SELECTED ITEMS "INLINE"
+// -----------------------------------------------------------------------------
+
+$bubl-dropdown-selected-option-inline-font-family: $bubl-font-family;
+$bubl-dropdown-selected-option-inline-font-weight: $bubl-font-weight-medium;
+$bubl-dropdown-selected-option-inline-font-size: $bubl-font-size-s;
+$bubl-dropdown-selected-option-inline-line-height: $bubl-line-height-s;
+$bubl-dropdown-selected-option-inline-color: $bubl-text-color;
+
+$bubl-dropdown-selected-option-inline-border-radius: 4px;
+
+$bubl-dropdown-selected-option-inline-border-width: 2px;
+$bubl-dropdown-selected-option-inline-border-style: solid;
+$bubl-dropdown-selected-option-inline-border-color: $bubl-color-2-500;
+$bubl-dropdown-selected-option-inline-border:
+    $bubl-dropdown-selected-option-inline-border-width
+    $bubl-dropdown-selected-option-inline-border-style
+    $bubl-dropdown-selected-option-inline-border-color;
+
+$bubl-dropdown-selected-option-inline-padding-top: .3125rem;
+$bubl-dropdown-selected-option-inline-padding-right: .5rem;
+$bubl-dropdown-selected-option-inline-padding-bottom: .2175rem;
+$bubl-dropdown-selected-option-inline-padding-left: .5rem;
+$bubl-dropdown-selected-option-inline-padding:
+    $bubl-dropdown-selected-option-inline-padding-top
+    $bubl-dropdown-selected-option-inline-padding-right
+    $bubl-dropdown-selected-option-inline-padding-bottom
+    $bubl-dropdown-selected-option-inline-padding-left;
+
+$bubl-dropdown-selected-option-inline-background: $bubl-color-2-100;
+
+$bubl-dropdown-selected-option-inline-button-color: $bubl-link-color;
+$bubl-dropdown-selected-option-inline-button-border-width: 2px;
+$bubl-dropdown-selected-option-inline-button-border-style: solid;
+$bubl-dropdown-selected-option-inline-button-border-color: transparent;
+$bubl-dropdown-selected-option-inline-button-border:
+    $bubl-dropdown-selected-option-inline-button-border-width
+    $bubl-dropdown-selected-option-inline-button-border-style
+    $bubl-dropdown-selected-option-inline-button-border-color;
+$bubl-dropdown-selected-option-inline-button-border-radius: 4px;
+$bubl-dropdown-selected-option-inline-button-background: transparent;
+
+$bubl-dropdown-selected-option-inline-button-color--hover: $bubl-text-color;
+$bubl-dropdown-selected-option-inline-button-border-color--hover: transparent;
+$bubl-dropdown-selected-option-inline-button-background--hover: transparent;

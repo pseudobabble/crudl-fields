@@ -1,0 +1,102 @@
+// *****************************************************************************
+// LABEL DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// LISTBOX BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-combobox,
+.bubl-combobox__header,
+.bubl-combobox__title,
+.bubl-combobox__content,
+.bubl-combobox__content-inner,
+.bubl-combobox__option {
+    position: relative;
+    float: left;
+    clear: both;
+    width: inherit;
+    display: block;
+}
+
+.bubl-combobox {
+
+}
+
+.bubl-combobox__header {
+    cursor: pointer;
+}
+
+.bubl-combobox__title {
+    transition: all $bubl-transition-speed $bubl-transition-cubic-bezier;
+    padding: $bubl-combobox-header-padding;
+    font-size: $bubl-combobox-header-font-size;
+    line-height: $bubl-combobox-header-line-height;
+    font-weight: $bubl-combobox-header-font-weight;
+    color: $bubl-combobox-header-color;
+    border: $bubl-combobox-header-border;
+    border-radius: $bubl-combobox-header-border-radius;
+    background: $bubl-combobox-header-background;
+    &:hover {
+        color: $bubl-combobox-header-color--hover;
+        border-color: $bubl-combobox-header-border-color--hover;
+        background: $bubl-combobox-header-background--hover;
+    }
+}
+
+.bubl-combobox__title .bubl-icon {
+    position: relative;
+    float: right;
+    color: $bubl-text-color-quiet;
+
+    .bubl-input & {
+        float: none;
+        top: .35rem;
+        margin: -.5rem 0 -.5rem .25rem;
+    }
+}
+
+.bubl-combobox__content {
+    .bubl-combobox__content-inner {
+        position: absolute;
+        z-index: 990;
+        min-width: 100%;
+    }
+}
+
+.bubl-combobox[aria-expanded="false"] {
+    .bubl-combobox__content {
+        display: none;
+    }
+}
+
+.bubl-combobox[aria-expanded="true"] {
+    .bubl-combobox__title {
+        color: $bubl-combobox-header-color--expanded;
+        border-color: $bubl-combobox-header-border-color--expanded;
+        background: $bubl-combobox-header-background--expanded;
+    }
+}
+
+
+.bubl-input > .bubl-combobox {
+    padding: 0;
+    width: auto;
+    .bubl-combobox__header,
+    .bubl-combobox__title,
+    .bubl-combobox__content,
+    .bubl-combobox__content-inner {
+        width: 100%;
+    }
+    .bubl-combobox__title {
+        border: 0;
+    }
+    .bubl-combobox__content {
+        box-sizing: border-box;
+        margin: 0 (- $bubl-input-border-width);
+        // width: calc(100% + (0.75 * #{$bubl-input-border-width}));
+    }
+}

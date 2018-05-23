@@ -1,0 +1,102 @@
+// *****************************************************************************
+// LISTBOX VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-listbox-font-family: $bubl-font-family;
+$bubl-listbox-font-weight: $bubl-font-weight-medium;
+$bubl-listbox-font-size: $bubl-font-size-r;
+$bubl-listbox-line-height: $bubl-line-height-r;
+$bubl-listbox-color: $bubl-text-color;
+
+$bubl-listbox-padding-top: 0;
+$bubl-listbox-padding-right: 0;
+$bubl-listbox-padding-bottom: 0;
+$bubl-listbox-padding-left: 0;
+$bubl-listbox-padding:
+    $bubl-listbox-padding-top
+    $bubl-listbox-padding-right
+    $bubl-listbox-padding-bottom
+    $bubl-listbox-padding-left;
+
+
+
+// BORDER
+// -----------------------------------------------------------------------------
+
+$bubl-listbox-border-width: 2px;
+$bubl-listbox-border-style: solid;
+$bubl-listbox-border-color: $bubl-color-2-600;
+$bubl-listbox-border:
+    $bubl-listbox-border-width
+    $bubl-listbox-border-style
+    $bubl-listbox-border-color;
+
+$bubl-listbox-border-radius: 4px;
+$bubl-listbox-border-radius-inner: 3px;
+
+
+
+// BACKGROUND & BOX-SHADOW
+// -----------------------------------------------------------------------------
+
+$bubl-listbox-background: $bubl-color-2-50;
+$bubl-listbox-box-shadow: 0 1rem 2rem transparentize($bubl-text-color, .75);
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+
+
+// LISTBOX__ITEM BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-listbox-option-font-family: $bubl-font-family;
+$bubl-listbox-option-font-weight: $bubl-font-weight-medium;
+$bubl-listbox-option-font-size: $bubl-font-size-r;
+$bubl-listbox-option-line-height: $bubl-line-height-r;
+$bubl-listbox-option-color: $bubl-text-color;
+
+$bubl-listbox-option-margin-top: 0;
+$bubl-listbox-option-margin-right: 0;
+$bubl-listbox-option-margin-bottom: 0;
+$bubl-listbox-option-margin-left: 0;
+$bubl-listbox-option-margin:
+    $bubl-listbox-option-margin-top
+    $bubl-listbox-option-margin-right
+    $bubl-listbox-option-margin-bottom
+    $bubl-listbox-option-margin-left;
+
+$bubl-listbox-option-padding-top: .5rem;
+$bubl-listbox-option-padding-right: .75rem;
+$bubl-listbox-option-padding-bottom: .5rem;
+$bubl-listbox-option-padding-left: .75rem;
+$bubl-listbox-option-padding:
+    $bubl-listbox-option-padding-top
+    $bubl-listbox-option-padding-right
+    $bubl-listbox-option-padding-bottom
+    $bubl-listbox-option-padding-left;
+
+$bubl-listbox-option-border-width: 1px;
+$bubl-listbox-option-border-style: solid;
+$bubl-listbox-option-border-color: $bubl-color-2-600;
+$bubl-listbox-option-border:
+    $bubl-listbox-option-border-width
+    $bubl-listbox-option-border-style
+    $bubl-listbox-option-border-color;
+
+$bubl-listbox-option-border-radius: 0;
+$bubl-listbox-option-border-radius-inner: 0;
+
+$bubl-listbox-option-background: transparent;
+
+$bubl-listbox-option-background--hover: $bubl-color-3-100;
+$bubl-listbox-option-background--selected: $bubl-color-3-100;
+$bubl-listbox-option-background--checked: $bubl-color-2-300;

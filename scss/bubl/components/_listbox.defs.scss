@@ -1,0 +1,102 @@
+// *****************************************************************************
+// LABEL DEFINITIONS
+//
+//
+// *****************************************************************************
+
+
+
+// LISTBOX BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-listbox,
+.bubl-listbox__header,
+.bubl-listbox__content,
+.bubl-listbox__option {
+    position: relative;
+    float: left;
+    clear: both;
+    width: inherit;
+    display: block;
+}
+
+.bubl-listbox {
+    padding: $bubl-listbox-padding;
+    font-size: $bubl-listbox-font-size;
+    line-height: $bubl-listbox-line-height;
+    font-weight: $bubl-listbox-font-weight;
+    color: $bubl-listbox-color;
+    border: $bubl-listbox-border;
+    border-radius: $bubl-listbox-border-radius;
+    background: $bubl-listbox-background;
+    box-shadow: $bubl-listbox-box-shadow;
+}
+
+.bubl-listbox_scrolling .bubl-listbox__content {
+    max-height: 9rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    backface-visibility: hidden;
+}
+
+.bubl-listbox__header {
+    padding: .5rem .75rem;
+    border-bottom: $bubl-listbox-option-border;
+    border-bottom-width: 2px;
+}
+
+.bubl-listbox__header > .bubl-input {
+    margin: -.5rem -.5rem -.75rem;
+    .bubl-icon,
+    input,
+    .bubl-button {
+        border-color: transparent !important;
+    }
+}
+
+.bubl-listbox__content .bubl-listbox__header {
+    padding-top: 1rem;
+    color: $bubl-text-color-quiet;
+}
+.bubl-listbox__content .bubl-listbox__header + .bubl-listbox__option {
+    border-top: 0;
+}
+.bubl-listbox__content .bubl-listbox__option + .bubl-listbox__header {
+    border-top: $bubl-listbox-option-border;
+    border-top-width: 2px;
+}
+
+
+
+// LISTBOX__ITEM BASICS
+// -----------------------------------------------------------------------------
+
+.bubl-listbox__option {
+    transition: all $bubl-transition-speed $bubl-transition-cubic-bezier;
+    padding: $bubl-listbox-option-padding;
+    font-size: $bubl-listbox-option-font-size;
+    line-height: $bubl-listbox-option-line-height;
+    font-weight: $bubl-listbox-option-font-weight;
+    color: $bubl-listbox-option-color;
+    border-top: $bubl-listbox-option-border;
+    border-radius: $bubl-listbox-option-border-radius;
+    background: $bubl-listbox-option-background;
+    cursor: pointer;
+    &:first-of-type {
+        border-top: 0;
+    }
+}
+
+.bubl-listbox__option {
+    &:hover {
+        background: $bubl-listbox-option-background--hover;
+    }
+
+    &[aria-checked="true"] {
+        background: $bubl-listbox-option-background--checked;
+    }
+
+    &[aria-selected="true"] {
+        background: $bubl-listbox-option-background--selected;
+    }
+}

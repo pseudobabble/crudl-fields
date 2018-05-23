@@ -1,0 +1,51 @@
+// *****************************************************************************
+// BUTTON VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+$bubl-button-font-family: $bubl-font-family;
+$bubl-button-font-weight: $bubl-font-weight-medium;
+$bubl-button-font-size: $bubl-font-size-r;
+$bubl-button-line-height: $bubl-line-height-r;
+
+
+
+// PADDING
+// -----------------------------------------------------------------------------
+
+$bubl-button-padding-top: .5rem;
+$bubl-button-padding-right: .5rem;
+$bubl-button-padding-bottom: .5rem;
+$bubl-button-padding-left: .5rem;
+$bubl-button-padding:
+    $bubl-button-padding-top
+    $bubl-button-padding-right
+    $bubl-button-padding-bottom
+    $bubl-button-padding-left;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-button-color: $bubl-color-2-50;
+$bubl-button-border-width: 2px;
+$bubl-button-border-style: solid;
+$bubl-button-border-color: transparent;
+$bubl-button-border:
+    $bubl-button-border-width
+    $bubl-button-border-style
+    $bubl-button-border-color;
+$bubl-button-border-radius: 4px;
+$bubl-button-background: $bubl-link-color;
+
+$bubl-button-color--hover: $bubl-color-2-50;
+$bubl-button-border-color--hover: transparent;
+$bubl-button-background--hover: $bubl-text-color;
+$bubl-button-background--disabled: $bubl-color-2;

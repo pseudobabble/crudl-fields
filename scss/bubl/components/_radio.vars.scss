@@ -1,0 +1,60 @@
+// *****************************************************************************
+// LABEL VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// ICON
+// -----------------------------------------------------------------------------
+
+$bubl-radio-icon-font-family: $bubl-icon-font-family;
+$bubl-radio-icon-font-size: $bubl-font-size-r;
+$bubl-radio-icon-line-height: $bubl-line-height-s;
+$bubl-radio-icon-color: $bubl-text-color;
+$bubl-radio-icon-size: 1rem;
+$bubl-radio-icon-offset: -.125rem;
+
+$bubl-radio-icon-border-width: 2px;
+$bubl-radio-icon-border-style: solid;
+$bubl-radio-icon-border-color: $bubl-color-2-600;
+$bubl-radio-icon-border:
+    $bubl-radio-icon-border-width
+    $bubl-radio-icon-border-style
+    $bubl-radio-icon-border-color;
+
+$bubl-radio-icon-border-radius: 4rem;
+$bubl-radio-icon-background: #fff;
+
+$bubl-radio-icon-size--checked: .75rem;
+$bubl-radio-icon-color--checked: $bubl-color-2-50;
+$bubl-radio-icon-border-color--checked: $bubl-text-color;
+$bubl-radio-icon-background--checked: $bubl-text-color;
+
+
+// LABEL
+// -----------------------------------------------------------------------------
+
+$bubl-radio-label-font-family: $bubl-font-family;
+$bubl-radio-label-font-weight: $bubl-font-weight-medium;
+$bubl-radio-label-font-size: $bubl-font-size-r;
+$bubl-radio-label-line-height: $bubl-line-height-r;
+
+$bubl-radio-label-padding-top: 0;
+$bubl-radio-label-padding-right: 0;
+$bubl-radio-label-padding-bottom: 0;
+$bubl-radio-label-padding-left: 1rem;
+$bubl-radio-label-padding:
+    $bubl-radio-label-padding-top
+    $bubl-radio-label-padding-right
+    $bubl-radio-label-padding-bottom
+    $bubl-radio-label-padding-left;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-radio-label-color: $bubl-text-color;
+$bubl-radio-label-color--error: $bubl-error-color;

@@ -1,0 +1,85 @@
+// *****************************************************************************
+// BUBL CORE CSS
+//
+//
+// *****************************************************************************
+
+
+
+// IMPORT THEME (optional)
+// -----------------------------------------------------------------------------
+
+@import "themes/default/theme.config";
+
+// BUBL IMPORTS
+// -----------------------------------------------------------------------------
+
+@import "globals/reset";
+@import "utils/mixins";
+
+
+
+// IMPORT BUBL CORE (VARS & DEFS)
+// -----------------------------------------------------------------------------
+
+@import "globals/bubl.vars";
+
+@import "components/button.vars";
+@import "components/button.defs";
+@import "components/field.vars";
+@import "components/field.defs";
+@import "components/icon.vars";
+@import "components/icon.defs";
+@import "components/input.vars";
+@import "components/input.defs";
+@import "components/checkbox.vars";
+@import "components/checkbox.defs";
+@import "components/dropdown.vars";
+@import "components/dropdown.defs";
+@import "components/radio.vars";
+@import "components/radio.defs";
+@import "components/label.vars";
+@import "components/label.defs";
+@import "components/listbox.vars";
+@import "components/listbox.defs";
+@import "components/combobox.vars";
+@import "components/combobox.defs";
+@import "components/dropdown.vars";
+@import "components/dropdown.defs";
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+html,
+body {
+    font-family: $bubl-font-family;
+    font-size: $bubl-font-size-r;
+    color: $bubl-text-color;
+    background: $bubl-body-background;
+    * {
+        box-sizing: border-box;
+        user-select: none;
+    }
+}
+
+a {
+    transition: all $bubl-transition-speed $bubl-transition-cubic-bezier;
+    color: $bubl-link-color;
+    font-family: $bubl-font-size-m;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+nav h3 {
+    margin-bottom: .5rem;
+}
+
+pre {
+    color: $bubl-color-4;
+    font-size: $bubl-font-size-s;
+    line-height: $bubl-line-height-s;
+    background-color: inherit !important;
+}

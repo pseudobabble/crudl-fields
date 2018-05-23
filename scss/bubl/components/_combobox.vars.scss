@@ -1,0 +1,62 @@
+// *****************************************************************************
+// COMBOBOX VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// BASICS
+// -----------------------------------------------------------------------------
+
+$bubl-combobox-header-font-family: $bubl-font-family;
+$bubl-combobox-header-font-weight: $bubl-font-weight-medium;
+$bubl-combobox-header-font-size: $bubl-font-size-r;
+$bubl-combobox-header-line-height: $bubl-line-height-r;
+$bubl-combobox-header-color: $bubl-text-color;
+
+$bubl-combobox-header-padding-top: .5rem;
+$bubl-combobox-header-padding-right: .5rem;
+$bubl-combobox-header-padding-bottom: .5rem;
+$bubl-combobox-header-padding-left: .5rem;
+$bubl-combobox-header-padding:
+    $bubl-combobox-header-padding-top
+    $bubl-combobox-header-padding-right
+    $bubl-combobox-header-padding-bottom
+    $bubl-combobox-header-padding-left;
+
+
+
+// BORDER
+// -----------------------------------------------------------------------------
+
+$bubl-combobox-header-border-width: 2px;
+$bubl-combobox-header-border-style: solid;
+$bubl-combobox-header-border-color: $bubl-color-2-600;
+$bubl-combobox-header-border:
+    $bubl-combobox-header-border-width
+    $bubl-combobox-header-border-style
+    $bubl-combobox-header-border-color;
+
+$bubl-combobox-header-border-radius: 4px;
+$bubl-combobox-header-border-radius-inner: 3px;
+
+
+
+// BACKGROUND & BOX-SHADOW
+// -----------------------------------------------------------------------------
+
+$bubl-combobox-header-background: $bubl-color-2-50;
+
+
+
+// STATES
+// -----------------------------------------------------------------------------
+
+$bubl-combobox-header-color--hover: $bubl-text-color;
+$bubl-combobox-header-border-color--hover: $bubl-color-2-600;
+$bubl-combobox-header-background--hover: $bubl-color-3-100;
+
+$bubl-combobox-header-color--expanded: $bubl-text-color;
+$bubl-combobox-header-border-color--expanded: $bubl-color-2-600;
+$bubl-combobox-header-background--expanded: $bubl-color-3-100;

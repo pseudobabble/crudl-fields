@@ -1,0 +1,164 @@
+// *****************************************************************************
+// BUBL VARIABLES
+//
+//
+// *****************************************************************************
+
+
+
+// COLORS
+// -----------------------------------------------------------------------------
+
+// COLOR 1
+// usually a dark neutral color
+$bubl-color-1: #232424 !default;
+
+// COLOR 2
+// usually a bright neutral color
+$bubl-color-2: #E5E5E6 !default;
+
+// COLOR 3
+// the main spot color
+$bubl-color-3: #33B6C2 !default;
+
+// COLOR 4
+// another spot color, used as error indicating color
+$bubl-color-4: #CC293C !default;
+
+
+
+// COLORSETS
+// -----------------------------------------------------------------------------
+
+// COLOR MIX VALUES
+$bubl-color-val-10: 5%;
+$bubl-color-val-25: 7%;
+$bubl-color-val-50: 10%;
+$bubl-color-val-100: 20%;
+$bubl-color-val-200: 40%;
+$bubl-color-val-300: 60%;
+$bubl-color-val-400: 80%;
+$bubl-color-val-500: 100%;
+$bubl-color-val-600: 88%;
+$bubl-color-val-700: 76%;
+$bubl-color-val-800: 64%;
+$bubl-color-val-900: 52%;
+$bubl-color-val-1000: 40%;
+$bubl-color-val-1100: 28%;
+
+// COLOR 1 SHADES
+$bubl-color-1-10: mix($bubl-color-1, #fff, $bubl-color-val-10);
+$bubl-color-1-25: mix($bubl-color-1, #fff, $bubl-color-val-25);
+$bubl-color-1-50: mix($bubl-color-1, #fff, $bubl-color-val-50);
+$bubl-color-1-100: mix($bubl-color-1, #fff, $bubl-color-val-100);
+$bubl-color-1-200: mix($bubl-color-1, #fff, $bubl-color-val-200);
+$bubl-color-1-300: mix($bubl-color-1, #fff, $bubl-color-val-300);
+$bubl-color-1-400: mix($bubl-color-1, #fff, $bubl-color-val-400);
+$bubl-color-1-500: $bubl-color-1;
+$bubl-color-1-600: mix($bubl-color-1, #000, $bubl-color-val-600);
+$bubl-color-1-700: mix($bubl-color-1, #000, $bubl-color-val-700);
+$bubl-color-1-800: mix($bubl-color-1, #000, $bubl-color-val-800);
+$bubl-color-1-900: mix($bubl-color-1, #000, $bubl-color-val-900);
+$bubl-color-1-1000: mix($bubl-color-1, #000, $bubl-color-val-1000);
+$bubl-color-1-1100: mix($bubl-color-1, #000, $bubl-color-val-1100);
+
+// Color 2
+$bubl-color-2-10: mix($bubl-color-2, #fff, $bubl-color-val-10);
+$bubl-color-2-25: mix($bubl-color-2, #fff, $bubl-color-val-25);
+$bubl-color-2-50: mix($bubl-color-2, #fff, $bubl-color-val-50);
+$bubl-color-2-100: mix($bubl-color-2, #fff, $bubl-color-val-100);
+$bubl-color-2-200: mix($bubl-color-2, #fff, $bubl-color-val-200);
+$bubl-color-2-300: mix($bubl-color-2, #fff, $bubl-color-val-300);
+$bubl-color-2-400: mix($bubl-color-2, #fff, $bubl-color-val-400);
+$bubl-color-2-500: $bubl-color-2;
+$bubl-color-2-600: mix($bubl-color-2, #000, $bubl-color-val-600);
+$bubl-color-2-700: mix($bubl-color-2, #000, $bubl-color-val-700);
+$bubl-color-2-800: mix($bubl-color-2, #000, $bubl-color-val-800);
+$bubl-color-2-900: mix($bubl-color-2, #000, $bubl-color-val-900);
+$bubl-color-2-1000: mix($bubl-color-2, #000, $bubl-color-val-1000);
+$bubl-color-2-1100: mix($bubl-color-2, #000, $bubl-color-val-1100);
+
+// Color 3
+$bubl-color-3-10: mix($bubl-color-3, #fff, $bubl-color-val-10);
+$bubl-color-3-25: mix($bubl-color-3, #fff, $bubl-color-val-25);
+$bubl-color-3-50: mix($bubl-color-3, #fff, $bubl-color-val-50);
+$bubl-color-3-100: mix($bubl-color-3, #fff, $bubl-color-val-100);
+$bubl-color-3-200: mix($bubl-color-3, #fff, $bubl-color-val-200);
+$bubl-color-3-300: mix($bubl-color-3, #fff, $bubl-color-val-300);
+$bubl-color-3-400: mix($bubl-color-3, #fff, $bubl-color-val-400);
+$bubl-color-3-500: $bubl-color-3;
+$bubl-color-3-600: mix($bubl-color-3, #000, $bubl-color-val-600);
+$bubl-color-3-700: mix($bubl-color-3, #000, $bubl-color-val-700);
+$bubl-color-3-800: mix($bubl-color-3, #000, $bubl-color-val-800);
+$bubl-color-3-900: mix($bubl-color-3, #000, $bubl-color-val-900);
+$bubl-color-3-1000: mix($bubl-color-3, #000, $bubl-color-val-1000);
+$bubl-color-3-1100: mix($bubl-color-3, #000, $bubl-color-val-1100);
+
+// Color 4
+$bubl-color-4-10: mix($bubl-color-4, #fff, $bubl-color-val-10);
+$bubl-color-4-25: mix($bubl-color-4, #fff, $bubl-color-val-25);
+$bubl-color-4-50: mix($bubl-color-4, #fff, $bubl-color-val-50);
+$bubl-color-4-100: mix($bubl-color-4, #fff, $bubl-color-val-100);
+$bubl-color-4-200: mix($bubl-color-4, #fff, $bubl-color-val-200);
+$bubl-color-4-300: mix($bubl-color-4, #fff, $bubl-color-val-300);
+$bubl-color-4-400: mix($bubl-color-4, #fff, $bubl-color-val-400);
+$bubl-color-4-500: $bubl-color-4;
+$bubl-color-4-600: mix($bubl-color-4, #000, $bubl-color-val-600);
+$bubl-color-4-700: mix($bubl-color-4, #000, $bubl-color-val-700);
+$bubl-color-4-800: mix($bubl-color-4, #000, $bubl-color-val-800);
+$bubl-color-4-900: mix($bubl-color-4, #000, $bubl-color-val-900);
+$bubl-color-4-1000: mix($bubl-color-4, #000, $bubl-color-val-1000);
+$bubl-color-4-1100: mix($bubl-color-4, #000, $bubl-color-val-1100);
+
+
+
+// COLOR ASSIGNMENTS
+// -----------------------------------------------------------------------------
+
+$bubl-text-color: $bubl-color-1-500 !default;
+$bubl-text-color-shy: lighten($bubl-text-color, 20) !default;
+$bubl-text-color-quiet: lighten($bubl-text-color, 40) !default;
+$bubl-text-color-silent: lighten($bubl-text-color, 60) !default;
+$bubl-link-color: $bubl-color-3-500;
+$bubl-error-color: $bubl-color-4-500;
+
+$bubl-body-background: $bubl-color-2-200 !default;
+
+
+
+// FONTS
+// -----------------------------------------------------------------------------
+
+$bubl-font-family: "Courier" !default;
+$bubl-base-font-size: 16px;
+$bubl-base-ratio: 1.25;
+$bubl-base-line-height: $bubl-base-font-size * $bubl-base-ratio;
+
+$bubl-font-size-xs: 0.75rem;
+$bubl-font-size-s: 0.875rem;
+$bubl-font-size-r: 1rem;
+$bubl-font-size-m: 1.325rem;
+$bubl-font-size-l: 1.75rem;
+$bubl-font-size-xl: 2.5rem;
+
+$bubl-line-height-xl: $bubl-font-size-xl * $bubl-base-ratio;
+$bubl-line-height-l: $bubl-font-size-l * $bubl-base-ratio;
+$bubl-line-height-m: $bubl-font-size-m * $bubl-base-ratio;
+$bubl-line-height-r: $bubl-font-size-r * $bubl-base-ratio;
+$bubl-line-height-s: $bubl-font-size-s * $bubl-base-ratio;
+$bubl-line-height-xs: $bubl-font-size-xs * $bubl-base-ratio;
+
+$bubl-font-weight-thin: 300;
+$bubl-font-weight-light: 300;
+$bubl-font-weight-regular: 400;
+$bubl-font-weight-medium: 500;
+$bubl-font-weight-semibold: 500;
+$bubl-font-weight-bold: 700;
+
+
+
+// TRANSITIONS
+// -----------------------------------------------------------------------------
+
+$bubl-transition-speed: 0.25s;
+$bubl-transition-cubic-bezier: cubic-bezier(.2, .3, .25, .9);
